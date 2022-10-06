@@ -5,10 +5,10 @@ spring:
    gateway: 
     routes:
       - id: catalogevent
-        uri: lb://evento/
+        uri: lb://catalogevent/
         predicates:
           - Path=/evento/**
       - id: databaseusers
-        uri: lb://user/
+        uri: lb://databaseusers/
         predicates:
           - Path=/user/**
