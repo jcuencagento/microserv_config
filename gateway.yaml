@@ -4,11 +4,18 @@ spring:
   cloud: 
    gateway: 
     routes:
+    
       - id: catalogevent
         uri: lb://catalogevent/
         predicates:
           - Path=/evento/**
+          
       - id: databaseusers
         uri: lb://databaseusers/
         predicates:
           - Path=/user/**
+          
+      - id: ticket
+        uri: lb://ticket/
+        predicates:
+          - Path=/ticket/**
