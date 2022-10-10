@@ -19,3 +19,8 @@ spring:
         uri: lb://ticket/
         predicates:
           - Path=/ticket/**
+          
+      - id: pasarelapago
+        uri: lb://pasarelapago/
+        predicates:
+          - Path=/pasarelapago/**
