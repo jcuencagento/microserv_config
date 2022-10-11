@@ -6,7 +6,7 @@ spring:
     routes:
     
       - id: catalogevent
-        uri: lb://evento/
+        uri: lb://catalogevent/
         predicates:
           - Path=/evento/**
           
