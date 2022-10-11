@@ -6,7 +6,7 @@ spring:
     routes:
     
       - id: catalogevent
-        uri: lb://host.docker.internal/
+        uri: lb://evento/
         predicates:
           - Path=/evento/**
           
